@@ -1,1 +1,1 @@
-export const NAME = 'Domagoj'
+export const GREETING = 'Hello, world!'

@@ -1,3 +1,4 @@
 import * as Constants from './Constants'
+import Heading from './Heading'
 
-console.log(`Hello ${Constants.NAME}!`)
+document.body.appendChild(Heading(Constants.GREETING))
