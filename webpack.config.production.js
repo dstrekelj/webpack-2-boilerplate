@@ -21,5 +21,8 @@ module.exports = function ({ input, output }) {
                 minChunks: Infinity,
             },
         ]),
+        loaders.exportCss({
+            include: input,
+        }),
     ])
 }
