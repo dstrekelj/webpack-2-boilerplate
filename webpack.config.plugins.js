@@ -1,9 +1,19 @@
 const webpack = require('webpack')
 
-exports.chunk = function (chunkConfigs) {
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+exports.chunk = function (configs) {
     return {
-        plugins: chunkConfigs.map(
+        plugins: configs.map(
             config => new webpack.optimize.CommonsChunkPlugin(config)
         ),
+    }
+}
+
+exports.html = function (config) {
+    return {
+        plugins: [
+            new HtmlWebpackPlugin(config)
+        ],
     }
 }
