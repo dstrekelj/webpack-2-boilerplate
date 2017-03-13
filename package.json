@@ -1,7 +1,7 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "webpack-2-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Work-in-progress boilerplate project using Webpack 2.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --env development",
