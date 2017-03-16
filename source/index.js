@@ -1,4 +1,9 @@
-import * as Constants from './Constants'
-import Heading from './Heading'
+import React from 'react'
+import { render } from 'react-dom'
 
-document.body.appendChild(Heading(Constants.GREETING))
+import App from './App'
+
+const root = document.createElement('div')
+document.body.appendChild(root)
+
+render(<App />, root)
