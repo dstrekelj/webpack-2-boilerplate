@@ -7,7 +7,7 @@ const configureProduction = require('./webpack.config.production')
 
 const PATH = {
     source: path.resolve(__dirname, 'source'),
-    build: path.resolve(__dirname, 'build'),
+    build: path.resolve(__dirname, 'temp'),
     dist: path.resolve(__dirname, 'dist'),
 }
 
